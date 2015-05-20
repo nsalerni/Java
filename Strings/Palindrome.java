@@ -1,5 +1,5 @@
 /*
- * Anagram.java
+ * Palindrome.java
  *
  * Author: Nick Salerni
  * Copyright (c) 2015. All rights reserved.
