@@ -14,7 +14,7 @@ public class BubbleSort
             it makes a pass all the way through the list without swapping any items.
       @param array - The array to sort.
     */
-    public static void BubbleSort(int[] array)
+    public static void bubbleSort(int[] array)
     {
         for (int i = (array.length - 1); i >= 0; i--)
         {

@@ -12,7 +12,7 @@ public class SelectionSort
       Note: The algorithm works by selecting the smallest unsorted item and then swapping it with the item in the next position to be filled.
       @param array - The array to sort.
     */
-    public static void SelectionSort(int[] array)
+    public static void selectionSort(int[] array)
     {
         for (int i = 0; i < array.length - 1; i++)
         {
