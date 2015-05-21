@@ -19,7 +19,7 @@ public class QuickSort
     {
         int i = startIndex; int j = endIndex;
         int temp = 0;
-        int pivot = array[(startIndex + endIndex) / 2]; // Choose a pivot (roughly the mid point of the array).
+        int pivot = array[(startIndex + endIndex) / 2]; // Choose a pivot (roughly the mid point of the array). Note: There are more optimal ways of choosing the pivot.
 
         // Partition the array into items less than the pivot (left side) and items greater than the pivot (right side).
         while (i <= j)
