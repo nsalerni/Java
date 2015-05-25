@@ -36,6 +36,41 @@ public class LinkedList<E>
     }
 
     /*
+      Get the last element in the linked list.
+      @return the last element in the linked list.
+    */
+    public E getLast()
+    {
+        if (head == null)
+            throw new NoSuchElementException();
+        Node<E> temp = head;
+        while (temp.next != null) temp = temp.next;
+
+        return temp.data;
+    }
+
+    /*
+      Get the element at position in the linked list.
+      @param position - the position in the list.
+      @return the element at position in the linked list.
+    */
+    public E get(int position)
+    {
+        if (head == null)
+            throw new NoSuchElementException();
+
+        Node<E> temp = head;
+
+        for (int i = 0; i < position; i++)
+            temp = temp.next;
+
+        if (temp == null)
+            throw new NoSuchElementException();
+
+        return temp.data;
+    }
+
+    /*
       Remove the first element in the linked list.
       @return the removed element.
     */
@@ -184,6 +219,7 @@ public class LinkedList<E>
         list.addFirst("T");
 
         ListIterator<String> iterator = list.listIterator();
+        System.out.println("The element at position 1: " + list.get(1));
         System.out.println(iterator.next());
         System.out.println(iterator.next());
         System.out.println(iterator.next());
