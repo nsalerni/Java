@@ -16,6 +16,11 @@ public class Parentheses
    private static final char L_BRACKET  = '[';
    private static final char R_BRACKET  = ']';
 
+   /*
+    Given a string containing parentheses determine if it is balanced.
+    @param str - The input string.
+    @return whether or not the string of parens is balanced.
+   */
    public static boolean isBalanced(String str)
    {
       Stack<Character> stack = new Stack<Character>();
@@ -60,7 +65,7 @@ public class Parentheses
       return stack.isEmpty();
    }
 
-   public static void main(String[] args) 
+   public static void main(String[] args)
    {
       System.out.println(isBalanced("((((()))))"));
       System.out.println(isBalanced("[[[[[[[]]]]]]]"));
